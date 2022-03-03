@@ -1,0 +1,294 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;   
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.padre {
+    background-color: rgb(150, 150, 150);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+   
+    background-position: center;
+    /* background-attachment: fixed; */
+    border-style: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+    height: 650px;
+    background-image: url(../AprendiendoFlexbox/Imagenes/frasemotivacion.jpg);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+    .menu {
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px;
+        justify-content: center;             
+        align-items: center;
+                      
+    }
+        .logo {
+            
+            flex: 1 1 auto;
+            height: auto;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: center center;           
+        }
+        .nav {
+            
+            flex: 5 1 auto;
+            height: auto;           
+            flex-wrap: nowrap;                      
+        }
+            .listanav {
+                display: flex;
+                flex-flow: row nowrap;
+                list-style-type: none;
+                justify-content: center;             
+                align-items: center;
+                font-size: 25px;
+                text-align: center;
+                                
+            }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 700;
+                    
+                }
+                a:hover {
+                    color: #27303A;
+                }
+                .listanav a:hover {
+                    
+                    color: #8C9C9C;
+                }
+
+                    div .listanav a {                    
+                        margin-left: 50px;
+                    
+                    }
+
+
+        .social {
+            
+            flex: 1 1 auto;
+            text-align: center;
+            padding-left: 40px ;
+            
+        }
+            .redes {            
+                height: 10px;
+                width: 10px;
+            }
+            
+    .textoprincipal {
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        align-items: center;       
+    }    
+    h1 {
+       /* background-color: rgb(238, 180, 180); */
+        
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 3em;
+        
+    }
+.principal {
+    background-color: #27303A;
+    display: flex;
+    padding: 20px;
+}
+    .articulos {
+        background-color: #969697;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+        
+        
+    }
+        .article {
+            /* display: flex;  */
+            flex: 1 1 40%;
+            height: fit-content;
+            font-size: 14px;
+            margin: 10px 10px 0px 10px;
+            background-color: rgb(199, 199, 199);
+            text-align: center;
+        }
+            .article h3{
+                margin: 15px 0px 10px 0px;
+            }
+            .article p {
+                margin: 0px 100px 20px 100px;
+            }
+
+        .article img {
+            width: 20%;
+            height: auto;
+            display: block;
+            margin: auto;
+            margin-bottom: 0px;
+
+        }
+        .navegacion {
+            text-align: center;            
+            background-color: #CCD2D6;
+            margin: 0px 10px 0px 10px;
+            flex: 1 1 100%;
+            height: 40px;
+            padding-top: 10px;
+            word-spacing: 8px;
+            
+        }
+           
+    .aside {
+        background-color: #8C9C9C;
+        flex: 1 1 auto;
+        
+        
+    }   
+        .publicidad {
+            background-color: #8C9C9C;
+            margin: 10px 0px 10px 0px;
+            width: 250px;
+        } 
+            .titulopublicidad {
+                text-align: center;
+                margin: 10px 0px 10px 0px;
+            }
+            .textopublicidad {
+                text-align: center;
+                padding: 0px 10px 10px 10px;
+            }
+            
+            .publicidad img {
+                display: block;
+                margin: auto;
+                margin-top: 15px;
+                width: 90%;
+            }
+
+.footer {
+    background-color: #27303A;
+    padding: 20px; 
+
+}
+    .pie {
+        background-color: #CCD2D6;
+        height: 100px;
+        text-align: center;
+        padding-top: 30px;
+        
+    }
+        .pie a {
+            color: black;
+        }
+            .pie a:hover {
+                color: #8C9C9C;
+            }
+
+ @media all and (max-width: 1200px) {
+    .header {
+        background-image: url(../AprendiendoFlexbox/Imagenes/frasemotivacion1240x1080.jpg);
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .article p {
+        margin: 0px 20px 20px 20px;
+    }
+ }
+
+@media all and (max-width: 800px) {
+    .header {
+        background-image: url(../AprendiendoFlexbox/Imagenes/frasemotivacion1240x1080.jpg);
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .principal {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .publicidad {
+            flex-direction: column;
+            background-color: #8C9C9C;
+            margin: 10px 0px 10px 0px;
+            
+        } 
+}
+
+@media all and (max-width:550px) {
+    .header {
+        background-image: url(../AprendiendoFlexbox/Imagenes/frasemotivacion.png);
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+        .logo {               
+            height: auto;
+            
+            background-repeat: no-repeat;
+            background-position: center center;           
+        }
+        .listanav {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: center;             
+            align-items: center;
+            font-size: 25px;
+            text-align: center; 
+        }
+            div .listanav a {                    
+                margin-left: 20px;
+            
+            }
+            .social {           
+                flex: 1 1 auto;
+                text-align: center;
+                padding-left: 40px ;
+                padding-top: 8px;
+                
+            }
+              .social a img {            
+                    height: 30px;
+                    width: 30px;
+                }
+    .articulos {
+        flex-direction: column;
+    }
+    .aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+        .publicidad {
+            background-color: #8C9C9C;
+            margin: 10px 0px 10px 0px;
+        } 
+}
